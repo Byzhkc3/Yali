@@ -22,7 +22,7 @@ time, mark, audio, video {
 body {
     line-height:1;
 }
-
+body,button,input,select,textarea{font:14px/1.5 arial,"SimHei",sans-serif}
 :focus {
 	outline: 1;
 }
@@ -32,7 +32,7 @@ footer,header,hgroup,menu,nav,section,summary {
     display:block;
 }
 
-nav ul {
+nav,ul,li{
     list-style:none;
 }
 
