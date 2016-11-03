@@ -7,7 +7,7 @@
     <meta name="misapplication-tap-highlight" content="no" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="MobileOptimized" content="320" />
-    <title>注册页面</title>
+    <title>重设密码</title>
     <link rel="stylesheet" type="text/css" href="../static/egg_reset.css">
     <style type="text/css">
     html,
@@ -22,7 +22,7 @@
     input {
         outline: none;
     }
-    
+
     .login_container {
         position: relative;
         height: 100%;
@@ -40,9 +40,8 @@
         left: 0;
         height: 50px;
         width: 100%;
-        background-color: #1791DF;
+        background-color: #fff;
         z-index: 9;
-        /*opacity: 0.6;*/
     }
     
     .login_header {
@@ -54,7 +53,7 @@
         z-index: 10;
         width: 100%;
         text-align: center;
-        color: #fff;
+        color: #373737;
     }
     
     .login_close {
@@ -72,7 +71,6 @@
     .login_header h2 {
         line-height: 50px;
         font-size: 24px;
-        letter-spacing: 4px;
     }
     
     .login_header span {
@@ -85,8 +83,9 @@
     }
     
     .reg_form {
-        margin-top: 75px;
+        margin-top: 70px;
         width: 100%;
+        z-index: 10;
     }
     
     .reg_form ul {
@@ -106,32 +105,7 @@
         border: none;
     }
     
-    .rec_tel {
-        margin-top: 12px;
-        width: 100%;
-        background-color: #fff;
-    }
     
-    .fr {
-        position: absolute;
-        top: 4px;
-        right: 0;
-        padding-left: 20px;
-        border-left: 1px solid #EFEEEE;
-    }
-    
-    .send_btn {
-        font-size: 16px;
-        display: block;
-        border-radius: 4px;
-        color: #fff;
-        box-sizing: border-box;
-        background-color: #ff5a00;
-        height: 42px;
-        line-height: 42px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
     
     .reg_form input {
         width: 85%;
@@ -153,7 +127,7 @@
         margin-right: 18px;
     }
     
-    .reg_btn {
+    .reset_btn {
         font-size: 18px;
         display: block;
         height: 50px;
@@ -164,60 +138,59 @@
         border-radius: 4px;
         font-weight: bold;
     }
-    
-    .agree {
-        margin-top: 22px;
-        text-align: center;
-        font-size: 14px;
+    span.log_lock {
+        background-image: url('../static/img/log_lock.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+        display: block;
+        float: left;
+        margin-top: 12px;
     }
-    
-    .agree a {
-        color: #4ebbf4;
-        display: inline-block;
-        margin-bottom: 38px;
+     span.log_eye {
+        background-image: url('../static/img/log_eye.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 26px;
+        height: 26px;
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 6px;
     }
     </style>
 </head>
 
 <body>
-    <!-- 注册容器 -->
+    <!-- 容器 -->
     <div class="login_container">
         <!-- 头部 -->
         <div class="login_header_wrap"></div>
         <div class="login_header">
             <i class="login_close"></i>
-            <h2>注册</h2>
-            <span>登陆</span>
+            <h2>重设密码</h2>
         </div>
         <!-- 表单部分 -->
         <div class="reg_form">
-            <!-- 注册表单 -->
+            <!-- 表单 -->
             <ul>
                 <li>
-                    <input type="tel" maxlength="11" id="tel" class="" placeholder="手机号">
+                    <span class="log_lock"></span>
+                    <input type="password" maxlength="18" id="tel" class="" placeholder="请设置6-18位数字和字母组成的密码">
+                    <span class="log_eye"></span>
                 </li>
                 <li>
-                    <input type="password" maxlength="18" id="pass" class="" placeholder="密码">
-                </li>
-                <li>
-                    <input id="valiCode" type="tel" maxlength="6"  class="" placeholder="校验码">
-                    <div class="fr"><a id="sendCheck" class="send_btn">发送校验码</a></div>
+                <span class="log_lock"></span>
+                    <input type="password" maxlength="18" id="pass" class="" placeholder="请再次输入密码">
+                    <span class="log_eye"></span>
                 </li>
             </ul>
-            <!-- 推荐人 -->
-            <div class="rec_tel">
-                <ul>
-                    <li>
-                        <input type="tel" id="recTel" maxlength="11" class="" placeholder="填写推荐者手机号">
-                    </li>
-                </ul>
-            </div>
-            <!-- 注册按钮 -->
+         
+            <!-- 重设按钮 -->
             <div class="button">
-                <a type="button" class="reg_btn" id="regUser">立即注册</a>
+                <a type="button" class="reset_btn" id="regUser">确认</a>
             </div>
-            <!-- 协议 -->
-            <div class="agree">注册即代表您已同意&nbsp;<a id="agreeId">&lt;&lt;驿驴用户协议&gt;&gt;</a></div>
         </div>
     </div>
     <script type="text/javascript">
