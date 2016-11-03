@@ -1,0 +1,176 @@
+/* 
+    egg 创建于2016.11.03 公共样式
+*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #EFEEEE;
+    font-weight: normal;
+}
+
+input {
+    outline: none;
+}
+
+
+/*容器*/
+
+.login_container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../static/img/rec_bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*顶部 容器*/
+
+.login_header_wrap {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+}
+
+
+/*顶部主体*/
+
+.login_header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 49px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    color: #373737;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+
+/*标题*/
+
+.login_header h2 {
+    line-height: 50px;
+    font-size: 24px;
+}
+
+
+/*左上侧 关闭按钮*/
+
+.login_close {
+    background-image: url('../static/img/login_close.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin-top: 14px;
+}
+
+
+/*右上角 图标*/
+
+.login_header span {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+
+/*表单区域*/
+
+.reg_form {
+    margin-top: 70px;
+    width: 100%;
+}
+
+
+/*表单ul样式*/
+
+.reg_form ul {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+/*表单li样式*/
+
+.reg_form ul li {
+    width: 94%;
+    margin: 0 3%;
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #EFEEEE;
+}
+
+
+/*清除最后一个li的边框*/
+
+.reg_form ul li:last-child {
+    border: none;
+}
+
+
+/*初始化表单input*/
+
+.reg_form input {
+    width: 85%;
+    height: 27px;
+    line-height: 27px;
+    float: right;
+    color: #666666;
+    padding: 12px 0;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+
+/*提交按钮*/
+
+.button {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 25px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+/*验证码布局*/
+.fr {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    padding-left: 20px;
+    border-left: 1px solid #EFEEEE;
+}
+/*发送验证码按钮样式*/
+.send_btn {
+    font-size: 16px;
+    display: block;
+    border-radius: 4px;
+    color: #fff;
+    box-sizing: border-box;
+    background-color: #ff5a00;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

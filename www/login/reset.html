@@ -9,123 +9,9 @@
     <meta name="MobileOptimized" content="320" />
     <title>重设密码</title>
     <link rel="stylesheet" type="text/css" href="../static/egg_reset.css">
+    
     <style type="text/css">
-    html,
-    body {
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        background-color: #EFEEEE;
-        font-weight: normal;
-    }
-    
-    input {
-        outline: none;
-    }
-
-    .login_container {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        background-image: url('../static/img/rec_bg.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-    
-    .login_header_wrap {
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 50px;
-        width: 100%;
-        background-color: #fff;
-        z-index: 9;
-    }
-    
-    .login_header {
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 50px;
-        z-index: 10;
-        width: 100%;
-        text-align: center;
-        color: #373737;
-    }
-    
-    .login_close {
-        background-image: url('../static/img/login_close.png');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        top: 0;
-        left: 20px;
-        margin-top: 14px;
-    }
-    
-    .login_header h2 {
-        line-height: 50px;
-        font-size: 24px;
-    }
-    
-    .login_header span {
-        position: absolute;
-        top: 0;
-        right: 20px;
-        display: inline-block;
-        line-height: 50px;
-        font-size: 20px;
-    }
-    
-    .reg_form {
-        margin-top: 70px;
-        width: 100%;
-        z-index: 10;
-    }
-    
-    .reg_form ul {
-        width: 100%;
-        background-color: #fff;
-    }
-    
-    .reg_form ul li {
-        width: 94%;
-        margin: 0 3%;
-        position: relative;
-        height: 50px;
-        border-bottom: 1px solid #EFEEEE;
-    }
-    
-    .reg_form ul li:last-child {
-        border: none;
-    }
-    
-    
-    
-    .reg_form input {
-        width: 85%;
-        height: 27px;
-        line-height: 27px;
-        float: right;
-        color: #666666;
-        padding: 12px 0;
-        background-color: transparent;
-        border: none;
-        font-size: 16px;
-    }
-    
-    .button {
-        height: 50px;
-        line-height: 50px;
-        margin-top: 25px;
-        margin-left: 18px;
-        margin-right: 18px;
-    }
+    /*提交按钮*/
     
     .reset_btn {
         font-size: 18px;
@@ -138,6 +24,8 @@
         border-radius: 4px;
         font-weight: bold;
     }
+    /*锁 图标*/
+    
     span.log_lock {
         background-image: url('../static/img/log_lock.png');
         background-size: 100% 100%;
@@ -148,7 +36,9 @@
         float: left;
         margin-top: 12px;
     }
-     span.log_eye {
+    /*眼睛 图标*/
+    
+    span.log_eye {
         background-image: url('../static/img/log_eye.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
@@ -181,12 +71,11 @@
                     <span class="log_eye"></span>
                 </li>
                 <li>
-                <span class="log_lock"></span>
+                    <span class="log_lock"></span>
                     <input type="password" maxlength="18" id="pass" class="" placeholder="请再次输入密码">
                     <span class="log_eye"></span>
                 </li>
             </ul>
-         
             <!-- 重设按钮 -->
             <div class="button">
                 <a type="button" class="reset_btn" id="regUser">确认</a>

@@ -1,0 +1,5 @@
+index.html 登陆页面
+reset.html 重设密码
+registered.html 注册页面
+forget.html 忘记密码
+freesms.html 编辑短信模板
