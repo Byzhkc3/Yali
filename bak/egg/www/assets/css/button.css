@@ -1,0 +1,57 @@
+﻿/*
+    Created by syl on 16/11/5.
+*/
+
+
+/*button star*/
+
+[class^="btn"],
+[class*=" btn"] {
+	display: inline-block;
+	margin-bottom: 0;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	text-decoration: none;
+	outline: 0;
+	border: 0;
+	background-image: none;
+}
+
+.btn-submit {
+	background-color: #06aafc;
+	border-radius: 6px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.btn-submit:active {
+	background-color: #07a4f2;
+}
+
+.btn-submit-disabled,
+.btn-submit-disabled:active {
+	background-color: #c5c5c5;
+	cursor: default;
+}
+
+.btn-code {
+	background-color: #f45202;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 14px;
+}
+
+.btn-code:active {
+	background-color: #e54e04;
+}
+
+.btn-code-disabled,
+.btn-code-disabled:active {
+	background-color: #c5c5c5;
+	cursor: default;
+}
+
+
+/*button end*/
