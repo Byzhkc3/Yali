@@ -1,0 +1,134 @@
+﻿/*
+    public
+    Created by syl on 16/11/5
+*/
+
+
+/*public star*/
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent
+}
+
+:before,
+:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+td,
+th {
+	padding: 0
+}
+
+ul,
+li,
+dl,
+dd,
+dt,
+ol {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.clearfix:after,
+.clearfix:before {
+	display: table;
+	content: ""
+}
+
+.clearfix:after {
+	clear: both
+}
+
+.text-justify {
+	text-align: justify;
+	text-justify: inter-ideograph;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+
+.click-url {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+	z-index: 20;
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right;
+}
+
+.fixed {
+	position: fixed
+}
+
+.rel {
+	position: relative;
+}
+
+.aimg {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+
+.ver-m,
+.lev-m,
+.vlev-m {
+	position: absolute;
+}
+
+.ver-m {
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.lev-m {
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.vlev-m {
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+/*public end*/
