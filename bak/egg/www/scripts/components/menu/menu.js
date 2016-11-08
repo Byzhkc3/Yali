@@ -54,15 +54,12 @@ define(function (require, exports, module) {
             var menu_icon = container.find('.menu_item_li');
             if (menu_icon.is('.action_index')) {
                 menu_icon.removeClass('gicon-foot-home').addClass('gicon-foot-home-now');
-                //
             }
             if (menu_icon.is('.action_order')) {
                 menu_icon.removeClass('gicon-foot-order').addClass('gicon-foot-order-now');
-
             }
             if (menu_icon.is('.action_friends')) {
                 menu_icon.removeClass('gicon-foot-friend').addClass('gicon-foot-friends-now');
-
             }
         },
         remove_action: function (container,callback) {

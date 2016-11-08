@@ -4,7 +4,8 @@
 'use strict';
 define(function(require, exports, module) {
     seajs.use([
-        'assets/js/public/swiper/swiper-3.4.0.min.css'
+        'assets/js/public/swiper/swiper-3.4.0.min.css',
+        'css/login/login.css'
     ]);
 
     var common = require('../{common}');
@@ -19,13 +20,11 @@ define(function(require, exports, module) {
                 if (html !== "") {
                     container.html(html);
                     swiper_bg.init({
-                        container: container.find(".swiper-bg")
-                        , images: [
-                            'images/app/index/index_bg_1.jpg'
-                            , 'images/app/index/index_bg_2.jpg'
-                            , 'images/app/index/index_bg_3.jpg'
-                        ]
-                        , effects: 'fade'
+                        container: container.find(".swiper-bg"),
+                        images: [
+                            'images/app/login/login_bg1.jpg', 'images/app/login/login_bg2.jpg', 'images/app/login/login_bg3.jpg'
+                        ],
+                        effects: 'fade'
                     }, null);
 
                     if (typeof login._callback === 'function') {
@@ -34,6 +33,7 @@ define(function(require, exports, module) {
                 }
             });
         }
+
     }
 
     return {

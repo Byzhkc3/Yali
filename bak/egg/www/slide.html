@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>侧滑页面</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="m/css/normalize.css" />
+    <link rel="stylesheet" href="m/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="m/css/main.css" />
+    <link rel="stylesheet" href="m/css/icon.css" />
+    <link rel="stylesheet" href="m/css/public.css" />
+    <style>
+        /*侧滑按钮*/
+
+        .slide-page {
+            background: #fff;
+        }
+
+            .slide-page .slide-head {
+                border-bottom: 1px solid #e1e0e0;
+                position: relative;
+            }
+
+            .slide-page .per-avatar {
+                margin: 0 auto;
+                border-radius: 50%;
+                background-color: #999;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+                .slide-page .per-avatar .gicon-personal-center {
+                    bottom: 0;
+                    opacity: .15;
+                }
+
+            .slide-page .per-name,
+            .slide-page .per-legalize {
+                text-align: center;
+            }
+
+                .slide-page .per-name h2 {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-weight: normal;
+                    font-size: .34rem;
+                }
+
+            .slide-page .slide-menu {
+                margin: 0;
+                padding: 0;
+            }
+
+                .slide-page .slide-menu li:active {
+                    background: #e6e6e6;
+                }
+
+            .slide-page .slide-root {
+                border-top: 1px solid #e1e0e0;
+            }
+
+                .slide-page .slide-root li {
+                    width: 50%;
+                    float: left;
+                    text-align: center;
+                }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="slide-page">
+            <div class="slide-head" style="padding: 100px 40px 30px 40px;">
+                <div class="per-avatar" style="width:178px;height:178px;">
+                    <span class="gicon-personal-center lev-m" style="width:142px;height:142px;"></span>
+                </div>
+                <div class="per-name" style="height: 80px;line-height: 80px;">
+                    <h2>张三</h2>
+                    <!--女用这个样式 gicon-gender-woman-->
+                    <span class="gicon-gender-man" style="width:26px;height:26px;"></span>
+                </div>
+                <div class="per-legalize" style="height: 50px;line-height: 50px;">
+                    <span class="gicon-legalize-guide" style="width:50px;height:50px;"></span>&nbsp;
+                    <span class="gicon-legalize-name" style="width:42px;height:42px;"></span>&nbsp;
+                    <span class="gicon-grade-v1" style="width:44px;height:44px;"></span>
+                </div>
+            </div>
+            <ul class="slide-menu" style="padding-top:38px">
+                <li style="height:90px;line-height:90px;padding-left:38px;"><span class="gicon-slide-wallet" style="width:40px;height:40px;margin-right:24px;"></span>钱包</li>
+                <li style="height:90px;line-height:90px;padding-left:38px"><span class="gicon-slide-integral" style="width:40px;height:40px;margin-right:24px;"></span>积分</li>
+                <li style="height:90px;line-height:90px;padding-left:38px"><span class="gicon-slide-pushoff" style="width:40px;height:40px;margin-right:24px;"></span>历史推客</li>
+                <li style="height:90px;line-height:90px;padding-left:38px"><span class="gicon-slide-task" style="width:40px;height:40px;margin-right:24px;"></span>历史任务 </li>
+                <li style="height:90px;line-height:90px;padding-left:38px"><span class="gicon-slide-fans" style="width:40px;height:40px;margin-right:24px;"></span>关注和粉丝</li>
+                <li style="height:90px;line-height:90px;padding-left:38px"><span class="gicon-slide-qrcode" style="width:40px;height:40px;margin-right:24px;"></span>我的推广码</li>
+            </ul>
+            <ul class="slide-root clearfix">
+                <li style="height:96px;line-height:96px;"><span class="gicon-slide-set" style="width:40px;height:40px;margin-right:14px;"></span>设置</li>
+                <li style="height:96px;line-height:96px;"><span class="gicon-slide-about" style="width:40px;height:40px;margin-right:14px;"></span>关于</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

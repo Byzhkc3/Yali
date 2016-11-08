@@ -3,7 +3,7 @@
  */
 'use strict';
 define(function (require, exports, module) {
-    alert("aaa");
+    // alert("aaa");
     var dataload = require('../{dataload}');
     dataload.Debug(true);
     var common = require('../{common}');
@@ -19,8 +19,10 @@ define(function (require, exports, module) {
                         "height": container.height() + "px"
                         , "width": container.width() + "px"
                     });
-
-                    
+                    var tools_obj = container.find("#index_tools");
+                    tools_obj.css({
+                         'background-color': 'rgba(0,0,0,.8)'
+                    });
                     swiper_bg.init({
                         container: container.find("#index_bg")
                         , images: [
