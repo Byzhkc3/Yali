@@ -1,0 +1,171 @@
+
+<!-- Created by egg on 16/11/07. -->
+
+<style type="text/css">
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#app {
+    height: 100%;
+}
+
+
+.login_form {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    right: 10%;
+    height: auto;
+    width: 80%;
+    z-index: 20;
+    color: #fff;
+}
+
+.logo_wrap {
+    margin: 0 auto;
+    width: 0.78rem;
+    overflow: hidden;
+}
+
+.logo_wrap i{
+    display: inline-block;
+    width: 0.78rem;
+    height: 1rem;
+}
+.logo_wrap img {
+    width: 70px;
+    height: 84px;
+}
+
+.log_sec_padding {
+    margin-top: 40px;
+}
+
+.log_sec {
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+    position: relative;
+}
+
+.log_sec input {
+    width: 85%;
+    line-height: 27px;
+    float: right;
+    color: #fff;
+    padding: 12px 0;
+    background-color: transparent;
+    border: none;
+    font-size: 0.16rem;
+}
+
+.button {
+    height: 50px;
+    line-height: 50px;
+    margin-top: 32px;
+}
+
+.log_btn {
+    font-size: 18px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #06AAFC;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+i{
+    color: #fff;
+}
+i.log_tel {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    float: left;
+    margin-top: 12px;
+}
+
+i.log_lock {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    float: left;
+    margin-top: 12px;
+}
+
+i.log_eye {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 6px;
+}
+
+.reg_fast {
+    height: 38px;
+    overflow: hidden;
+    padding: 4px;
+    line-height: 38px;
+}
+
+.reg_fast a {
+    color: #F1F1EF;
+    font-size: 15px;
+}
+
+.reg_a1 {
+    float: left;
+}
+
+.reg_a2 {
+    float: right;
+}
+
+.swiper-bg{
+    height: 100%;
+    width: 100%;
+}
+</style>
+<!-- 登陆容器 -->
+<div class="login_container">
+
+    <!-- 表单部分 -->
+    <div class="login_form">
+        <!-- logo -->
+        <div class="logo_wrap ">
+            <i class="gicon-logo-white"></i>
+        </div>
+        <!-- 输入框 -->
+        <section class="log_sec log_sec_padding">
+            <i class="log_tel gicon-form-phone"></i>
+            <input type="tel" value="" maxlength="11" id="tel" class="" placeholder="手机号">
+            <i class=""></i>
+        </section>
+        <section class="log_sec">
+            <i class="log_lock gicon-form-password"></i>
+            <input type="password" minlength="6" autocomplete="off" maxlength="18" id="pass" class="" placeholder="密码">
+            <i class="log_eye gicon-form-closeeyes"></i>
+        </section>
+        <!-- 登陆按钮 -->
+        <div class="button">
+            <a href="#" type="button" class="log_btn" id="a_login">登录</a>
+        </div>
+        <!-- 注册提示 -->
+        <div class="reg_fast">
+            <a href="javascript:;" class="reg_a1">快速注册</a>
+            <a href="javascript:;" class="reg_a2">忘记密码</a>
+        </div>
+    </div>
+    <!-- 背景 -->
+    <div class="swiper-bg"></div>
+</div>
+

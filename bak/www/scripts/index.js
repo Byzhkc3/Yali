@@ -19,11 +19,11 @@ function countScreen(s, type) {
     var jsRoot = 'assets/js/';
     Modernizr.load([{
         load: {
-            'flexible': jsRoot + 'public/flexible/flexible.js'//加载动画
-            , 'jquery': jsRoot + 'public/jquery/jquery-3.1.1.min.js'//加载动画
-            , 'jquery-form': jsRoot + 'public/jquery/jquery.form.js'//加载动画
-            , 'hammer': jsRoot + 'public/hammer/hammer.min.js'//加载动画
-            , 'jquery-hammer': jsRoot + 'public/jquery/jquery.hammer.js'//加载动画
+            'flexible': jsRoot + 'public/flexible/flexible.js'//苹果retina屏1px解决方案
+            , 'jquery': jsRoot + 'public/jquery/jquery-3.1.1.min.js'//jquery库
+            , 'jquery-form': jsRoot + 'public/jquery/jquery.form.js'//jquery表单提交插件
+            , 'hammer': jsRoot + 'public/hammer/hammer.min.js'//触摸屏幕点击库
+            , 'jquery-hammer': jsRoot + 'public/jquery/jquery.hammer.js'//触摸屏幕jquery插件
             , 'spink': jsRoot + 'module/spinkit/spinkit.js'//加载动画
         },
         callback: function (url, result, key) {
@@ -38,18 +38,20 @@ function countScreen(s, type) {
         }
     }, {
         load: {
-            'sea': jsRoot + 'frame/seajs/sea.js'
-            , 'seajs-css': jsRoot + 'frame/seajs/seajs-css.js'
-            , "seajs-preload": jsRoot + 'frame/seajs/seajs-preload.js'
-            , "vue": jsRoot + 'frame/vue/vue.js'
-            , 'underscore': jsRoot + 'public/underscore/underscore.js'
-            , "html5media": jsRoot + 'public/html5media/html5media-1.1.8.min.js'
-            , "moment": jsRoot + 'public/moment/moment-local-2.1.3.min.js'
-            , "icheck": jsRoot + 'public/icheck/icheck.min.js'
-            , "swiper": jsRoot + 'public/swiper/swiper-3.4.0.jquery.min.js'
-            , "validator": jsRoot + 'public/validator/validator-5.2.0.min.js'
-            , "basil": jsRoot + 'public/basil/basil.js'
-            , "select": jsRoot + 'public/select/js/select2.full.min.js'
+            'sea': jsRoot + 'frame/seajs/sea.js'//seajs模块
+            , 'seajs-css': jsRoot + 'frame/seajs/seajs-css.js'//seajs样式加载模块
+            , "seajs-preload": jsRoot + 'frame/seajs/seajs-preload.js'//seajs预加载模块
+            , "vue": jsRoot + 'frame/vue/vue.js'//vue模块
+            , 'underscore': jsRoot + 'public/underscore/underscore.js'//underscore库
+            , "html5media": jsRoot + 'public/html5media/html5media-1.1.8.min.js'//HTML视频
+            , "moment": jsRoot + 'public/moment/moment-local-2.1.3.min.js'//日期插件
+            , "icheck": jsRoot + 'public/icheck/icheck.min.js'//选择框插件
+            , "swiper": jsRoot + 'public/swiper/swiper-3.4.0.jquery.min.js'//swiper插件
+            , "validator": jsRoot + 'public/validator/validator-5.2.0.min.js'//验证插件
+            , "basil": jsRoot + 'public/basil/basil.js'//统一存储插件
+            , "select": jsRoot + 'public/select/js/select2.full.min.js'//下拉框插件
+            , "move": jsRoot + 'public/move/move.min.js'//下拉框插件
+            , "transit": jsRoot + 'public/jquery/jquery.transit.js'//css3动画插件
         },
         callback: function (url, result, key) {
 
@@ -63,6 +65,10 @@ function countScreen(s, type) {
                     , "notykit": "../../assets/js/module/notykit/notykit"
                     , "scrollcontrol": "../../assets/js/module/scrollcontrol/scrollcontrol"
                     , "tabskit": "../../assets/js/module/tabskit/tabskit"
+                    , "module": "../../assets/js/module/"
+                    , "public": "../../assets/js/module/"
+                    , "frame": "../../assets/js/frame/"
+                    , "components": "../../scripts/components/"
                 },
                 paths: {
                     "module": "../../assets/js/module/"

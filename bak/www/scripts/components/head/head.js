@@ -15,22 +15,18 @@ define(function (require, exports, module) {
                 if (html !== "") {
                     container.html(html);
                     container.find(".head_circle").css({
-                        "width": countScreen(56,'h') + "px"
-                        , "height": countScreen(56, 'h') + "px"
-                        , "line-height": countScreen(56, 'h')-2 + "px"
+                        "width": countScreen(60,'h') + "px"
+                        , "height": countScreen(60, 'h') + "px"
+                        , "line-height": countScreen(60, 'h') - 2 + "px"
                     });
 
                     container.find(".head_components").css({
-                        "padding": countScreen(17, 'h') + 'px ' + countScreen(25, 'h')+'px'
+                        "padding": countScreen(15, 'h') + 'px ' + countScreen(25, 'h')+'px'
                     });
                     container.find(".head_content").css({
-                        "width": _width - (countScreen(81, 'h')) * 2 + "px"
-                        , "height": countScreen(56, 'h') + "px"
-                        , "line-height": countScreen(56, 'h') + "px"
-                    });
-                    container.find(".head_item").css({
-                        "width": countScreen(28, 'h') + "px"
-                        , "height": countScreen(28, 'h') + "px"
+                        "width": _width - (countScreen(85, 'h')) * 2 + "px"
+                        , "height": countScreen(60, 'h') + "px"
+                        , "line-height": countScreen(60, 'h') + "px"
                     });
 
                     head.action(container);

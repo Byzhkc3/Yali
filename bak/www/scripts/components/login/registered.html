@@ -1,0 +1,102 @@
+<!-- Created by egg on 16/11/07. -->
+<style type="text/css">
+.login_header_wrap {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #1791DF;
+    z-index: 9;
+}
+
+.login_header {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*推荐人*/
+
+.rec_tel {
+    margin-top: 12px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.reg_btn {
+    font-size: 18px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #06AAFC;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.agree {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.agree a {
+    color: #4ebbf4;
+    display: inline-block;
+    margin-bottom: 38px;
+}
+</style>
+<!-- 注册容器 -->
+<div class="login_container">
+    <!-- 头部 -->
+    <div class="login_header_wrap"></div>
+    <div class="login_header">
+        <i class="login_close gicon-public-xx-white"></i>
+        <h2>注册</h2>
+        <span>登陆</span>
+    </div>
+    <!-- 表单部分 -->
+    <div class="reg_form">
+        <!-- 注册表单 -->
+        <ul>
+            <li>
+                <span class="log_tel gicon-form-phone"></span>
+                <input type="tel" maxlength="11" id="tel" class="" placeholder="手机号">
+            </li>
+            <li>
+                <span class="log_lock gicon-form-password"></span>
+                <input type="password" maxlength="18" id="pass" class="" placeholder="密码">
+            </li>
+            <li>
+                <span class="log_lock gicon-public-code"></span>
+                <input id="valiCode" type="tel" maxlength="6" class="" placeholder="校验码">
+                <div class="fr"><a id="sendCheck" class="send_btn">发送校验码</a></div>
+            </li>
+        </ul>
+        <!-- 推荐人 -->
+        <div class="rec_tel">
+            <ul>
+                <li>
+                    <span class="log_lock gicon-form-phone"></span>
+                    <input type="tel" id="recTel" maxlength="11" class="" placeholder="填写推荐者手机号">
+                </li>
+            </ul>
+        </div>
+        <!-- 注册按钮 -->
+        <div class="button">
+            <a type="button" class="reg_btn" id="regUser">立即注册</a>
+        </div>
+        <!-- 协议 -->
+        <div class="agree">注册即代表您已同意&nbsp;<a id="agreeId">&lt;&lt;驿驴用户协议&gt;&gt;</a></div>
+    </div>
+</div>

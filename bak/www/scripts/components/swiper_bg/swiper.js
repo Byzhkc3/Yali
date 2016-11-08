@@ -10,6 +10,10 @@ define(function (require, exports, module) {
     var common = require('../{common}');
     var dataload = require('../{dataload}');
     dataload.Debug(true);
+
+    function Blur(img_id,canvas_id) {
+        StackBlur.image(img_id, canvas_id, 100, true);
+    }
     var swiper = {
         init: function (options, callback) {
             options = (typeof (options) == "object" && options != null) ? options : null;
@@ -43,15 +47,21 @@ define(function (require, exports, module) {
                                 , direction: direction
                                 , loop: true
                                 , autoplay: times
+                                , autoplayDisableOnInteraction: false
                                 , effect: effects
+                                , fade: {
+                                    crossFade: true,
+                                }
+                                , centeredSlides: true
+                                , simulateTouch: false
                                 , speed: 1000
 
-
+                                , onInit: function () {
+                                    if (typeof callback === 'function') {
+                                        callback();
+                                    }
+                                }
                             });
-
-                            if (typeof callback === 'function') {
-                                callback();
-                            }
                         }
                     });
                 }

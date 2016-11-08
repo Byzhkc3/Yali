@@ -7,17 +7,17 @@ define(function (require, exports, module) {
     var dataload = require('dataload');
     var head = require('components/head/head');
     var menu = require('components/menu/menu');
-    var swiper_bg = require('components/swiper_bg/swiper');
+    var content = require('components/index/index')
     var index = {
         init: function () {
             dataload.GetFile(null, 'html/app/index.html', function (appHtml) {
                 if (appHtml !== "") {
-                    index.setLayout(appHtml);
+                    index.set_layout(appHtml);
                 }
             }, null);
         },
         //设置布局
-        setLayout: function (htmlContent) {
+        set_layout: function (htmlContent) {
             var head_height = countScreen(90, 'h');
             var menu_height = countScreen(100, 'h');
             var content_height = _height - head_height - menu_height;
@@ -29,7 +29,7 @@ define(function (require, exports, module) {
                 "height": head_height + "px"
             });
 
-            var content_obj = $("#content,#index_bg");
+            var content_obj = $("#content");
             content_obj.css({
                 "height": content_height + "px"
                 , "width": _width + "px"
@@ -42,19 +42,12 @@ define(function (require, exports, module) {
 
             head.init($('#head'), function () {
                 menu.init($('#menu'), function () {
-                    swiper_bg.init({
-                        container: content_obj.find("#index_bg")
-                        , images: [
-                            'images/app/index/index_bg_1.jpg'
-                            , 'images/app/index/index_bg_2.jpg'
-                            , 'images/app/index/index_bg_3.jpg'
-                        ]
-                        , effects: 'fade'
-                    },null);
+                    content.init($('#content'), null);
                 });
             });
 
         },
+
     }
     return {
         init: index.init
